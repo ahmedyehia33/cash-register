@@ -82,19 +82,6 @@ const cashRegister = ()=>{
     let reversedCID = [...cid].reverse();       
     let totalReversedCID = parseFloat(reversedCID.reduce((el,cur) => el + cur[1],0));
     let totalChangeArray = parseFloat(changeArray.reduce((el,cur)=> el + cur[1],0));       
-        
-            
-            
-            //console logs
-            
-        console.log('change array' +changeArray)    
-        console.log('cid'+cid);
-        console.log('total reve cid :' , totalReversedCID);
-        console.log( 'totalt change arra ' + parseFloat(changeArray.reduce((acc,cur)=> acc + cur[1],0)));
-        console.log("Cash:", cash);
-        console.log("Change:", change);
-        console.log(Math.abs(Number(change.toFixed(2)))*100);
-     //go back to our function
     
         if (cash < parseFloat(price)){
             alert('Customer does not have enough money to purchase the item');
@@ -145,12 +132,12 @@ const cashRegister = ()=>{
 updateCIDdisplay(cid);
 
 purchaseBtn.addEventListener('click', cashRegister); 
-cashInput.addEventListener('keydown',(e)=>{
-    if(e.key === 'Enter'){
-        cashRegister();
-        return;
-    }
-})
+cashInput.addEventListener('keydown',(e)=>{if(e.key === 'Enter'){cashRegister();return; }})
+    
+        
+        
+   
+
             
 
 
