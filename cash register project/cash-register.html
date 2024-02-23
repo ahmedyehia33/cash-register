@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html lang="en">
+          <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Cash Register</title>
+              <link rel="stylesheet" type="text/css" href="cash-register.css">
+          </head>
+
+ <!--body starts here-->
+ 
+         <body>
+            <header>
+                <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freecodecamplogo">
+                <h1>Cash Register Project</h1>
+            </header>
+    
+ <!--input container-->
+            <div class="cash-container">
+                  <div id="change-due"></div>
+                  <div><p>Enter cash from customer:</p></div>
+                  <div><input type="number" id="cash"></div>
+                  <div><button type="button" id="purchase-btn">Purchase</button></div>
+            </div>
+   
+    
+ <!--the machine-->   
+          <div class="machine-container">
+                  <div class="machine-screen" >
+                        <div class="cash-amount" id="price-screen"></div>
+                  </div>
+            
+              <div class="machine-arm"></div>
+              <div class="machine-body">
+                  <div class="window-container">
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                        <div class="window"></div>
+                  </div>
+                  <div class="cash-content" id="cash-drawer-display">
+                      <p><strong>Change in drawer</strong></p>
+                  </div>
+              </div>
+              <div class="machine-base">
+                  <div class="machine-btn"></div>
+              </div>
+          </div>
+
+<script src="cash-register-.js"></script>
+    </body>
+    </html>
